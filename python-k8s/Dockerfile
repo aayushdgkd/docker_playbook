@@ -1,3 +1,4 @@
+#Using Alpine version of the official image for small size
 FROM python:3.8-alpine
 
 WORKDIR /usr/src/app
