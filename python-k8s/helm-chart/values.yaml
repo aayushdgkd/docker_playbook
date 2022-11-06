@@ -5,7 +5,6 @@ service:
   type: ClusterIP
   port: 80
 
-replicaCount: 1
 
 image:
   repository: python-flask-api
