@@ -1,0 +1,25 @@
+App:
+  name: python-flask-api
+
+service:
+  type: ClusterIP
+  port: 80
+
+replicaCount: 1
+
+image:
+  repository: python-flask-api
+  pullPolicy: IfNotPresent
+  tag: "1"
+
+
+ingress:
+  className: ""
+  annotations: 
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  hosts:
+    - host: api-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+
