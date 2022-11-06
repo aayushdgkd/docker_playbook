@@ -9,7 +9,7 @@
 5. system has internet access
 
 ## Steps to Build
-1. Take the clone and get inside the root directory of the repo
+1. Take the clone and get inside the python-k8s/ directory of the repo
 2. Build your docker image -
 ```sh
 docker build -t python-flask-api:1 .
