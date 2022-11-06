@@ -13,5 +13,5 @@
 3. Link to import json for the official dashboard - https://github.com/kubernetes/ingress-nginx/blob/main/deploy/grafana/dashboards/nginx.json
 
 Few screeshots of how it will actually look -
-![Dashboard]https://github.com/kubernetes/ingress-nginx/blob/main/deploy/grafana/dashboards/screenshot.png)
+![Dashboard](https://github.com/kubernetes/ingress-nginx/blob/main/deploy/grafana/dashboards/screenshot.png)
 
