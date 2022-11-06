@@ -8,6 +8,7 @@
 4. helm is installed and connected to the cluster
 5. system has internet access
 
+
 ## Steps to Build
 1. Take the clone and get inside the python-k8s/ directory of the repo
 2. Build your docker image -
@@ -19,8 +20,9 @@ docker build -t python-flask-api:1 .
 ```sh
 helm install python-flask-api .
 ```
-5. Deployment,pod,ConfigMap and service will get created
-6. If you are feeling lucky,run "sh setup.sh" to setup everything at once. The output will look somewhat like this -
+5. Deployment,pod,Ingress and service will get created
+6. Create entry in your "/etc/hosts" file - "127.0.0.1 api-example.local"
+7. If you are feeling lucky,run "sh setup.sh" to setup everything at once. The output will look somewhat like this -
 
 ```sh
 sh setup.sh
@@ -146,3 +148,5 @@ service/python-flask-api-service   ClusterIP   10.101.172.161   <none>        80
 NAME                                                 CLASS   HOSTS               ADDRESS   PORTS   AGE
 ingress.networking.k8s.io/python-flask-api-ingress   nginx   api-example.local             80      30s
 ```
+
+PS - This code is tested on a minikube cluster, to enable ingress controller on minikube you need to run - "minikube addons enable ingress" and "minikube tunnel"
