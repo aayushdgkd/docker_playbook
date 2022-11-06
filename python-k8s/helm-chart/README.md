@@ -2,7 +2,7 @@
 
 1. Helm has been used to package the manifests that need to be deployed on kubernetes.
 2. It makes handling of variables very easy using the values.yaml file
-3. New revisions of the service can be easily deployed by changing the image tag in values.yamla
+3. New revisions of the service can be easily deployed by changing the image tag in values.yaml
 
 # Scaling
 We can scale the application to multiple replicas and requests will be equally distributed between them
