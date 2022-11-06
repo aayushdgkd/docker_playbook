@@ -131,7 +131,7 @@ STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 ```
-sh ```
+```sh
 % kubectl get po,deploy,service,ing
 NAME                                    READY   STATUS    RESTARTS   AGE
 pod/python-flask-api-58dc7d9bd6-g5zpk   1/1     Running   0          30s
