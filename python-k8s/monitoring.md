@@ -12,6 +12,6 @@
 2. We can monitor the traffic by checking the non 200 status codes and visualise the same on Grafana
 3. Link to import json for the official dashboard - https://github.com/kubernetes/ingress-nginx/blob/main/deploy/grafana/dashboards/nginx.json
 
-Few screeshots of how it will actually look -
+An idea of how it will actually look -
 ![Dashboard](https://github.com/kubernetes/ingress-nginx/blob/main/deploy/grafana/dashboards/screenshot.png)
 
