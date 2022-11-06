@@ -22,7 +22,7 @@ helm install python-flask-api .
 ```
 5. Deployment,pod,Ingress and service will get created
 6. Create entry in your "/etc/hosts" file - "127.0.0.1 api-example.local"
-7. If you are feeling lucky,run "sh setup.sh" to setup everything at once. The output will look somewhat like this -
+7. If you are feeling lucky,run "sh setup.sh" to bootstrap everything at once. The output will look somewhat like this -
 
 ```sh
 sh setup.sh
