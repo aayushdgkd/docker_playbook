@@ -148,5 +148,9 @@ service/python-flask-api-service   ClusterIP   10.101.172.161   <none>        80
 NAME                                                 CLASS   HOSTS               ADDRESS   PORTS   AGE
 ingress.networking.k8s.io/python-flask-api-ingress   nginx   api-example.local             80      30s
 ```
+```sh
+% curl http://api-example.local/api
+{"hostname":"python-flask-api-58dc7d9bd6-rcngg","timestamp":"Fri, 04 Nov 2022 21:38:21 GMT"}
+```
 
 PS - This code is tested on a minikube cluster, to enable ingress controller on minikube you need to run - "minikube addons enable ingress" and "minikube tunnel"
